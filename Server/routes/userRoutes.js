@@ -31,4 +31,9 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// Đăng xuất
+router.post('/logout', auth, (req, res) => {
+  res.json({ message: 'Logged out successfully' });
+});
+
 module.exports = router;
